@@ -32,6 +32,11 @@ const CompanyInfo = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-4xl font-bold mb-6">О компании</h2>
+            <p className="text-lg text-gray-300 mb-8">
+              Мы специализируемся на производстве качественных траверсов для
+              крановой техники. Изготовление траверсов осуществляется от 2 до 8
+              дней в зависимости от сложности заказа.
+            </p>
 
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
               {advantages.map((advantage, index) => (
@@ -95,6 +100,15 @@ const CompanyInfo = () => {
                     className="text-blue-400 flex-shrink-0"
                   />
                   <p className="text-gray-300">info@traverse-pro.ru</p>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Icon
+                    name="Mail"
+                    size={20}
+                    className="text-blue-400 flex-shrink-0"
+                  />
+                  <p className="text-gray-300">delattraversa@mail.ru</p>
                 </div>
 
                 <div className="flex items-center gap-3">
