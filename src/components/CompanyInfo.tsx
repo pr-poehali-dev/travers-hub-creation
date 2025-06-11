@@ -67,9 +67,11 @@ const CompanyInfo = () => {
                   />
                   <div>
                     <p className="text-gray-300">
-                      г. Москва, Промышленная зона "Северная"
+                      ПК Спецремонт
                       <br />
-                      ул. Заводская, 15
+                      Московская область, Сергиево-Посадский городской округ
+                      <br />
+                      рабочий посёлок Скоропусковский
                     </p>
                   </div>
                 </div>
@@ -81,8 +83,8 @@ const CompanyInfo = () => {
                     className="text-blue-400 flex-shrink-0"
                   />
                   <div>
-                    <p className="text-gray-300">+7 (495) 123-45-67</p>
-                    <p className="text-gray-300">+7 (800) 555-01-23</p>
+                    <p className="text-gray-300">+7 (967) 209-52-41</p>
+                    <p className="text-gray-300">+7 (909) 966-22-44</p>
                   </div>
                 </div>
 
