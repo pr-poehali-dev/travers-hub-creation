@@ -102,8 +102,8 @@ const CompanyInfo = () => {
                     className="text-blue-400 flex-shrink-0"
                   />
                   <div>
-                    <p className="text-gray-300">Пн-Пт: 8:00 - 18:00</p>
-                    <p className="text-gray-300">Сб: 9:00 - 15:00</p>
+                    <p className="text-gray-300">Круглосуточно 24/7</p>
+                    <p className="text-gray-300">Без выходных</p>
                   </div>
                 </div>
               </CardContent>
