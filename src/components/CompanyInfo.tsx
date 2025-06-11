@@ -32,12 +32,6 @@ const CompanyInfo = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-4xl font-bold mb-6">О компании</h2>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Специализируемся на производстве траверсов и грузозахватных
-              приспособлений для промышленных предприятий. Работаем с 2010 года,
-              выполнили более 500 проектов для заводов металлургии,
-              машиностроения и строительства.
-            </p>
 
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
               {advantages.map((advantage, index) => (

@@ -13,27 +13,6 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Производим траверсы любой сложности по индивидуальным техническим
-            требованиям. Качественная сталь, точные расчеты, быстрые сроки
-            изготовления.
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <div className="flex items-center gap-2 bg-blue-600/20 px-4 py-2 rounded-lg">
-              <Icon name="CheckCircle" size={20} />
-              <span>Сертифицированное производство</span>
-            </div>
-            <div className="flex items-center gap-2 bg-blue-600/20 px-4 py-2 rounded-lg">
-              <Icon name="Zap" size={20} />
-              <span>Быстрое изготовление</span>
-            </div>
-            <div className="flex items-center gap-2 bg-blue-600/20 px-4 py-2 rounded-lg">
-              <Icon name="Shield" size={20} />
-              <span>Гарантия качества</span>
-            </div>
-          </div>
-
           <div className="flex justify-center gap-4">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               <Icon name="MessageSquare" size={20} />
