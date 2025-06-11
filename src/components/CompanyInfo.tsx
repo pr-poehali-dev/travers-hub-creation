@@ -99,15 +99,6 @@ const CompanyInfo = () => {
                     size={20}
                     className="text-blue-400 flex-shrink-0"
                   />
-                  <p className="text-gray-300">info@traverse-pro.ru</p>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Icon
-                    name="Mail"
-                    size={20}
-                    className="text-blue-400 flex-shrink-0"
-                  />
                   <p className="text-gray-300">delattraversa@mail.ru</p>
                 </div>
 
