@@ -28,10 +28,43 @@ const CustomOrderForm = () => {
     contactEmail: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Order submitted:", formData);
-    alert("Заявка отправлена! Мы свяжемся с вами в ближайшее время.");
+
+    // Формируем данные для отправки
+    const emailData = {
+      to: "delattraversa@mail.ru",
+      subject: "Новая заявка на расчет траверса",
+      body: `
+        ЗАЯВКА НА РАСЧЕТ ТРАВЕРСА
+        
+        Технические характеристики:
+        • Тип траверса: ${formData.traverseType}
+        • Грузоподъемность: ${formData.loadCapacity} тонн
+        • Размеры: ${formData.length} × ${formData.width} × ${formData.height} мм
+        • Материал: ${formData.material}
+        • Количество: ${formData.quantity} шт
+        
+        Дополнительные требования:
+        ${formData.additionalSpecs || "Не указаны"}
+        
+        Контактная информация:
+        • Имя: ${formData.contactName}
+        • Телефон: ${formData.contactPhone}
+        • Email: ${formData.contactEmail}
+      `,
+    };
+
+    try {
+      // Создаем mailto ссылку для отправки
+      const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+      window.location.href = mailtoLink;
+
+      alert("Заявка сформирована! Откроется почтовая программа для отправки.");
+    } catch (error) {
+      console.error("Ошибка при отправке:", error);
+      alert("Произошла ошибка. Пожалуйста, свяжитесь с нами по телефону.");
+    }
   };
 
   return (
